@@ -2,13 +2,23 @@
     font-family: "Comfortaa";
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 300px;
-    background-color: whitesmoke;
+    background-color: rgb(201, 133, 240);
+    width: min-content;
+    padding: 10px;
+    border: 4px solid #8d5dba;
+    border-radius: 10px;
 }
 
 #display {
@@ -18,6 +28,8 @@
     text-align: right;
     background-color: #ebdff5;
     border-radius: 10px;
+    display: flex;
+
 }
 
 .row {
@@ -40,4 +52,24 @@ button {
 }
 .equals {
     width: 240px;
+}
+
+#backspace {
+    border: none;
+    background-color: #8d5dba;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.text {
+    flex-grow: 1;
+    text-align: right;
 }
